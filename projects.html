@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ze Kai</title>
+    <meta name="description" content="Explore projects created by [Your Name], including web applications, software tools, and more.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="assets/images/logo.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main class="projects">
+            <h1>My Projects</h1>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projects/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Snake</h3>
+                        <p>Created a modified snake game with randomised controls.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zekaistic/nomnom" class="button secondary small" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projects/back to gallery.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Photography Website</h3>
+                        <p>Developed a personal photography website.</p>
+                        <div class="project-tech">
+                            <span>Javascript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://zekai.pics/" class="button primary small" target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projects/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Name 3</h3>
+                        <p>A brief description of the project, what technologies were used, and what problems it solves.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="button primary small" target="_blank" rel="noopener noreferrer">View Live</a>
+                            <a href="#" class="button secondary small" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projects/project4.jpg" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Name 4</h3>
+                        <p>A brief description of the project, what technologies were used, and what problems it solves.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="button primary small" target="_blank" rel="noopener noreferrer">View Live</a>
+                            <a href="#" class="button secondary small" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/zekaistic" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/yapzekai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Yap Ze Kai. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

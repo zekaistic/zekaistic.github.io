@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ze Kai</title>
+    <meta name="description" content="Get in touch with [Your Name] for collaborations, opportunities, or questions.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="assets/images/logo.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </header>
+
+        <main class="contact">
+            <h1>Get In Touch!</h1>
+            <p class="contact-intro">Have a question or want to work together? Feel free to reach out!</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <h3>Email</h3>
+                        <p><a href="mailto:your.email@example.com">yapzekai11@gmail.com</a></p>
+                    </div>
+                    <div class="contact-method">
+                        <h3>Location</h3>
+                        <p>Singapore</p>
+                    </div>
+                    <div class="contact-method">
+                        <h3>Social</h3>
+                        <div class="social-links vertical">
+                            <a href="https://github.com/zekaistic" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://linkedin.com/in/yapzekai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button primary">Send Message</button>
+                    </form>
+                    <div id="formStatus" class="form-status"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/zekaistic" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/yapzekai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Basic form handling (in a real scenario, you would use a backend service)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formStatus = document.getElementById('formStatus');
+            
+            // Simulate form submission
+            formStatus.textContent = 'Sending message...';
+            formStatus.className = 'form-status info';
+            
+            // Simulate success after 1.5 seconds
+            setTimeout(() => {
+                formStatus.textContent = 'Your message has been sent! I\'ll get back to you soon.';
+                formStatus.className = 'form-status success';
+                document.getElementById('contactForm').reset();
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

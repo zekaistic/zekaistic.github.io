@@ -23,7 +23,7 @@
 
 /* Dark mode variables - uncomment and customize if needed */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --primary-color: #008080;
         --primary-dark: #16A085;
@@ -34,8 +34,9 @@
         --text-light: #a0a0a0;
         --border-color: #333333;
         --box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+        --project-tech-span-background-color: #7abdfb;
     }
-}
+} */
 
 
 /* Global Styles */
@@ -380,7 +381,7 @@ nav a.active::after {
 
 /* Projects Page (continued) */
 .project-image {
-    height: 200px;
+    height: 190px;
     overflow: hidden;
 }
 
@@ -411,7 +412,7 @@ nav a.active::after {
 }
 
 .project-tech span {
-    background-color: #1E1E1E;
+    background-color: #3bdbff;
     color: var(--secondary-color);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -453,12 +454,12 @@ nav a.active::after {
 }
 
 .contact-method {
-    color: #008080;
+    color: #5e48e8;
     margin-bottom: 2rem;
 }
 
 .contact-method h3 {
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 0.5rem;
 }
 

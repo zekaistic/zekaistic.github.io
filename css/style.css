@@ -1,8 +1,3 @@
-/* 
-* Main Stylesheet
-* A clean, minimalist design for a developer portfolio
-*/
-
 /* Base Styles & Variables */
 :root {
     --primary-color: #5e48e8;
@@ -21,7 +16,7 @@
     --font-code: 'JetBrains Mono', 'Fira Code', monospace;
 }
 
-/* Dark mode variables - uncomment and customize if needed */
+/* Dark mode variables */
 
 /* @media (prefers-color-scheme: dark) {
     :root {

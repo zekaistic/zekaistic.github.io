@@ -1,8 +1,3 @@
-/**
- * Animations JavaScript file
- * Contains various animation functions and effects
- */
-
 // Create a typing effect for elements with class 'typing-effect'
 const createTypingEffect = (element, words, typingSpeed = 150, deleteSpeed = 100, pauseTime = 1500) => {
     let wordIndex = 0;

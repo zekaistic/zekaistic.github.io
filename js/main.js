@@ -1,8 +1,3 @@
-/**
- * Main JavaScript file
- * Contains common functionality used across the site
- */
-
 // Detect when an element enters the viewport
 const observeElements = () => {
     const observerOptions = {

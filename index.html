@@ -1,84 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ze Kai | Developer</title>
-    <meta name="description" content="Personal website of Ze Kai, a software developer focused on [your specialties].">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" href="assets/images/logo.ico" type="image/icon type">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <nav>
-                <a href="index.html" class="active"><b>Home</b></a>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yap Ze Kai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ze kai's portfolio"
+    />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+  </html>
 
-        <main class="home">
-            <div class="intro">
-                <h1>Hi, I'm <span class="highlight">Ze Kai.</span></h1>
-                <h2>NUS Computer Science Undergraduate</h2>
-                <p class="tagline">I build <span class="typewriter"></span></p>
-                <div class="cta-buttons">
-                    <a href="projects.html" class="button primary">View My Work</a>
-                    <a href="contact.html" class="button secondary">Get In Touch</a>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <div class="social-links">
-                <a href="https://github.com/zekaistic" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com/in/yapzekai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-            <p class="copyright">&copy; <span id="year"></span> Yap Ze Kai. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <script src="js/main.js"></script>
-    <script>
-        // Update copyright year
-        document.getElementById('year').textContent = new Date().getFullYear();
-        
-        // Simple typewriter effect
-        const words = ['websites.', 'applications.', 'experiences.'];
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const typewriterElement = document.querySelector('.typewriter');
-        
-        function typeWriter() {
-            const currentWord = words[wordIndex];
-            
-            if (isDeleting) {
-                typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
-                charIndex++;
-            }
-            
-            if (!isDeleting && charIndex === currentWord.length) {
-                isDeleting = true;
-                setTimeout(typeWriter, 1500);
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                wordIndex = (wordIndex + 1) % words.length;
-                setTimeout(typeWriter, 500);
-            } else {
-                setTimeout(typeWriter, isDeleting ? 100 : 150);
-            }
-        }
-        
-        // Start the typewriter effect
-        typeWriter();
-    </script>
-</body>
-</html>

@@ -34,6 +34,15 @@ export function Journey() {
                   ))}
                 </ul>
               )}
+              {item.techStack && item.techStack.length > 0 && (
+                <div className="timeline-tech-tags">
+                  {item.techStack.map((tech) => (
+                    <span key={tech} className="timeline-tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </article>
         ))}

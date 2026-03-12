@@ -4,6 +4,7 @@ export type JourneyItem = {
   organization: string;
   description: string;
   projects?: string[];
+  techStack?: string[];
 };
 
 export const journey: JourneyItem[] = [
@@ -25,6 +26,7 @@ export const journey: JourneyItem[] = [
       "HealthRoots - An Android/iOS mobile application for obesity tracking in children @ KK Women and Children's Hospital",
       "Admin portals for these applications for data visualisation and analysis",
     ],
+    techStack: ["React Native", "Next.js", "Node.js", "PostgreSQL", "Firebase", "AWS Lambda"],
   },
   {
     year: "2024",
